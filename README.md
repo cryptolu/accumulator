@@ -23,6 +23,5 @@ The following libraries are needed for compilation
 To compile
 ```
 gcc main.c -o acc -I/usr/local/include/relic/ -lrt /usr/local/lib/libpbc.a /usr/local/lib/librelic_s.a /usr/local/lib/libgmp.a -lgmp -lrelic -lpbc -lssl -lcrypto -ggdb -Wall
-
 ```
 

@@ -1694,9 +1694,12 @@ int main(void) {
 
 	printf("\n\nTesting Witness Update Protocol:\n");
 
+	batchSize = 100000;
+	basicBatchAdd(accumulator, batchSize);
+	
 	printf("\n- Membership witness\n");
 
-	//We issue a new non-membership witness
+	//We issue a new membership witness
 	free(w_y);
 	w_y = issueWitness(accumulator, accumulator->Y[0], MEMBERSHIP);
 
